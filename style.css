@@ -1,0 +1,201 @@
+
+body {
+    background-image: url(https://images.pexels.com/photos/3053082/pexels-photo-3053082.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    min-height: 100vh;
+    -ms-grid-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+}
+
+/* //////////////// MENU //////////// */
+.titulo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+
+.menu ul li {
+    position: fixed;
+    right: 10%;
+    font-size: 18px;
+    overflow: hidden;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.menu ul li:hover {
+    background: #e4405f;
+    -webkit-box-shadow: 0 0 10px #e4405f, 0 0 40px #e4405f, 0 0 80px #e4405f;
+            box-shadow: 0 0 10px #e4405f, 0 0 40px #e4405f, 0 0 80px #e4405f;
+    -webkit-transition-delay: 200ms;
+            transition-delay: 200ms;
+}
+
+.navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px;
+    background: black;
+    background: -webkit-gradient(linear, left top, right top, color-stop(9%, black), color-stop(37%, #5b0f22), color-stop(65%, #010506));
+    background: linear-gradient(90deg, black 9%, #5b0f22 37%, #010506 65%);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: whitesmoke;
+}
+
+.logo {
+    margin-right: 15px;
+    color: whitesmoke;
+    text-shadow: 0 0 5px red;
+    font-size: 20px;
+}
+
+.logo spam {
+    color: red;
+    font-size: 30px;
+}
+
+.list {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .drop-down ul {
+    list-style: none;
+    display: block;
+    position: fixed;
+    right: 0;
+    visibility: hidden;
+    padding: 10px 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.9px);
+    -webkit-backdrop-filter: blur(8.9px);
+    -webkit-transition: ease all 0.3s;
+    transition: ease all 0.3s;
+}
+
+.navbar .drop-down:hover > ul {
+    opacity: 1;
+    top: 61%;
+    visibility: visible;
+}
+
+.navbar .drop-down ul > a {
+    margin-top: 30px;
+}
+
+#toggler, .navbar label {
+    display: none;
+}
+
+.item {
+    border: 2px whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+.item-image {
+    height: 300px;
+    width: 100%;
+}
+
+.item-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 15px;
+}
+
+.item-details > .item-price {
+    margin: 0;
+}
+
+  /* ? SHOPPING CART */
+.shopping-cart-items {
+    padding: 20px 0px;
+}
+
+.shopping-cart-header {
+    border-bottom: 1px whitesmoke;
+}
+
+.shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px whitesmoke;
+    border-radius: 5px;
+    background: whitesmoke;
+    padding: 5px;
+}
+
+.shopping-cart-total {
+    min-height: 96px;
+}
+
+
+
+
+/* //////////////////FOOTER///////////////// */
+.footer {
+    position: absolute;
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+    height: 100px;
+    background: black;
+    background: -webkit-gradient(linear, left top, right top, color-stop(9%, black), color-stop(37%, #5b0f22), color-stop(65%, #010506));
+    background: linear-gradient(90deg, black 9%, #5b0f22 37%, #010506 65%);
+    text-align: center;
+    padding: auto;
+}
+
+.footer h4 {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: whitesmoke;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+  /* ============FIN DE FOOTER=========== */
+
